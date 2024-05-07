@@ -11,6 +11,13 @@ class HomePage extends StatelessWidget {
         backgroundColor: MainColors.brownCoffeeMilk,
       ),
       drawer: Drawer(
+        child:Container(
+          color: MainColors.brownNude,
+          child: ListView(
+            children: [],
+          
+          ),
+        )
         
       ),
     );
