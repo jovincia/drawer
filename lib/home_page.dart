@@ -14,7 +14,14 @@ class HomePage extends StatelessWidget {
         child:Container(
           color: MainColors.brownNude,
           child: ListView(
-            children: [],
+            children: [
+              DrawerHeader(child: Center(
+                child: Text("Made by Dani ♥",
+                style: TextStyle(
+                  fontSize: 24
+                )),
+              ))
+            ],
           
           ),
         )
