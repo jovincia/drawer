@@ -1,5 +1,6 @@
 import 'package:drawer/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -16,10 +17,15 @@ class HomePage extends StatelessWidget {
           child: ListView(
             children: [
               DrawerHeader(child: Center(
-                child: Text("Made by Dani ♥",
-                style: TextStyle(
-                  fontSize: 24
-                )),
+                child: Text("Made by Dani ♥♥♥♥♥",
+                style:GoogleFonts.calligraffitti(
+                  fontSize:24,
+                  color:MainColors.brown1,
+                  
+
+                )
+                  
+                ),
               ))
             ],
           
