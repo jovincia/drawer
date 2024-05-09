@@ -1,4 +1,6 @@
 import 'package:drawer/colors.dart';
+import 'package:drawer/pages/first_page.dart';
+import 'package:drawer/pages/second_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -30,14 +32,27 @@ class HomePage extends StatelessWidget {
               title: Text(
                 "Page 1",
                 style: GoogleFonts.cabin(
-                  fontSize:24,
+                  fontSize: 24,
                 ),
-               
               ),
-              onTap: (){
-                
+              onTap: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => FirstPage()));
               },
-            )
+            ),
+            ListTile(
+              leading: Icon(Icons.computer_rounded),
+              title: Text(
+                "Page 2",
+                style: GoogleFonts.cabin(
+                  fontSize: 24,
+                ),
+              ),
+              onTap: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => SecondPage()));
+              },
+            ),
           ],
         ),
       )),
