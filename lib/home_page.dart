@@ -20,10 +20,10 @@ class HomePage extends StatelessWidget {
           children: [
             DrawerHeader(
               child: Center(
-                child: Text("Made by Dani ♥♥♥♥♥♥♥♥",
+                child: Text("Made by Dani ♥",
                     style: GoogleFonts.calligraffitti(
                       fontSize: 24,
-                      color: MainColors.brown1,
+                      color: MainColors.white,
                     )),
               ),
             ),
@@ -31,9 +31,7 @@ class HomePage extends StatelessWidget {
               leading: Icon(Icons.home),
               title: Text(
                 "Page 1",
-                style: GoogleFonts.cabin(
-                  fontSize: 24,
-                ),
+                style: GoogleFonts.calligraffitti(fontSize: 24, color: MainColors.white),
               ),
               onTap: () {
                 Navigator.of(context)
@@ -44,13 +42,11 @@ class HomePage extends StatelessWidget {
               leading: Icon(Icons.computer_rounded),
               title: Text(
                 "Page 2",
-                style: GoogleFonts.cabin(
-                  fontSize: 24,
-                ),
+                style: GoogleFonts.calligraffitti(fontSize: 24, color: MainColors.white),
               ),
               onTap: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => SecondPage()));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => SecondPage()));
               },
             ),
           ],
