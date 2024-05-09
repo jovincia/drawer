@@ -12,27 +12,35 @@ class HomePage extends StatelessWidget {
         backgroundColor: MainColors.brownCoffeeMilk,
       ),
       drawer: Drawer(
-        child:Container(
-          color: MainColors.brownNude,
-          child: ListView(
-            children: [
-              DrawerHeader(child: Center(
-                child: Text("Made by Dani ♥♥♥♥♥",
-                style:GoogleFonts.calligraffitti(
+          child: Container(
+        color: MainColors.brownNude,
+        child: ListView(
+          children: [
+            DrawerHeader(
+              child: Center(
+                child: Text("Made by Dani ♥♥♥♥♥♥♥♥",
+                    style: GoogleFonts.calligraffitti(
+                      fontSize: 24,
+                      color: MainColors.brown1,
+                    )),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text(
+                "Page 1",
+                style: GoogleFonts.cabin(
                   fontSize:24,
-                  color:MainColors.brown1,
-                  
-
-                )
-                  
                 ),
-              ))
-            ],
-          
-          ),
-        )
-        
-      ),
+               
+              ),
+              onTap: (){
+                
+              },
+            )
+          ],
+        ),
+      )),
     );
   }
 }
