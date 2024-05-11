@@ -7,6 +7,12 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      appBar: AppBar(
+        backgroundColor: MainColors.brown2,
+        leading: IconButton(onPressed: (){
+          Navigator.of(context).pop();
+        }, icon: Icon(Icons.arrow_back)),
+      ),
       backgroundColor: MainColors.brown1,
       body: Center(
         child: Text("Future Amazing Genius in Tech",

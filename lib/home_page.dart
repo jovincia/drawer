@@ -10,50 +10,63 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Center(
+        child: Text(
+          "Welcome Page !!!",
+          style: GoogleFonts.calligraffitti(
+            color: MainColors.white,
+            fontSize: 30,
+          ),
+        ),
+      ),
+      backgroundColor: MainColors.brownNude,
       appBar: AppBar(
         backgroundColor: MainColors.brownCoffeeMilk,
       ),
       drawer: Drawer(
-          child: Container(
-        color: MainColors.brownNude,
-        child: ListView(
-          children: [
-            DrawerHeader(
-              child: Center(
-                child: Text("Made by Dani ♥",
+        child: Container(
+          color: MainColors.brownNude,
+          child: ListView(
+            children: [
+              DrawerHeader(
+                child: Center(
+                  child: Text(
+                    "Made by Dani ♥",
                     style: GoogleFonts.calligraffitti(
                       fontSize: 24,
                       color: MainColors.white,
-                    )),
+                    ),
+                  ),
+                ),
               ),
-            ),
-            ListTile(
-              leading: Icon(Icons.home),
-              title: Text(
-                "Page 1",
-                style: GoogleFonts.calligraffitti(fontSize: 24, color: MainColors.white),
+              ListTile(
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Page 1",
+                  style: GoogleFonts.calligraffitti(
+                      fontSize: 24, color: MainColors.white),
+                ),
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => FirstPage()));
+                },
               ),
-              onTap: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => FirstPage()));
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.computer_rounded),
-              title: Text(
-                "Page 2",
-                style: GoogleFonts.calligraffitti(fontSize: 24, color: MainColors.white),
+              ListTile(
+                leading: Icon(Icons.computer_rounded),
+                title: Text(
+                  "Page 2",
+                  style: GoogleFonts.calligraffitti(
+                      fontSize: 24, color: MainColors.white),
+                ),
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => SecondPage()));
+                },
               ),
-              onTap: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => SecondPage()));
-              },
-            ),
-          ],
+            ],
+          ),
         ),
       ),
-      ),
-      endDrawer: Drawer(),
     );
   }
 }
