@@ -8,6 +8,9 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       backgroundColor: MainColors.brownCoffeeMilk,
+      appBar: AppBar(
+        leading:Icon(Icons.arrow_back) ,
+      ),
       body: Center(
         child: Text("Welcome home ♥",
         style:GoogleFonts.calligraffitti(
