@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               ListTile(
-                leading: Icon(Icons.home),
+                leading: const Icon(Icons.home),
                 title: Text(
                   "Page 1",
                   style: GoogleFonts.calligraffitti(
@@ -48,11 +48,11 @@ class HomePage extends StatelessWidget {
                 ),
                 onTap: () {
                   Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => FirstPage()));
+                      MaterialPageRoute(builder: (context) => const FirstPage()));
                 },
               ),
               ListTile(
-                leading: Icon(Icons.computer_rounded),
+                leading: const Icon(Icons.computer_rounded),
                 title: Text(
                   "Page 2",
                   style: GoogleFonts.calligraffitti(
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                 ),
                 onTap: () {
                   Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => SecondPage()));
+                      MaterialPageRoute(builder: (context) => const SecondPage()));
                 },
               ),
             ],

@@ -11,7 +11,7 @@ class SecondPage extends StatelessWidget {
         backgroundColor: MainColors.brown2,
         leading: IconButton(onPressed: (){
           Navigator.of(context).pop();
-        }, icon: Icon(Icons.arrow_back)),
+        }, icon: const Icon(Icons.arrow_back)),
       ),
       backgroundColor: MainColors.brown1,
       body: Center(
